@@ -7,7 +7,7 @@ OBJS = $(patsubst %.cpp,$(OBJ_DIR)/%.o,$(SRCS))
 
 DEPENDS = $(OBJS:.o=.d)
 
-NAME = scalarconverter
+NAME = serialiser
 -include $(DEPENDS)
 
 .PHONY: all

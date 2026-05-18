@@ -92,7 +92,7 @@ int ScalarConverter::isDouble(const std::string& input)
 
 int ScalarConverter::isPseudoLiteral(const std::string& input)
 {
-    return (input == "nan" || input == "+inf" || input == "-inf" || input == "nanf" || input == "+inff" || input == "-inff");
+    return (input == "inf" || input == "inff" || input == "nan" || input == "+inf" || input == "-inf" || input == "nanf" || input == "+inff" || input == "-inff");
 }
 
 void ScalarConverter::printImpossibleAll()
